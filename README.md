@@ -1,4 +1,4 @@
-# CSC2042 Team48
+# CSC2042 Team48 (Note : This read me will be updated and completed this week)
 Repository for Team 48 scripts, documentation and any other useful files/links.
 For tracking progress as we'll be using the trello board (https://trello.com/b/elB5Nmiz/csc2042-team-48).
 
@@ -9,10 +9,11 @@ When adding this repo to your own pc, open git bash in the chosen directory and 
 
 `git init` 
 
-`git remote add origin remote repository URL`
+`git remote add origin https://github.com/rowan-adair/CSC2042Team48.git`
 
 `git remote -v`
 
+`git pull`
 
 # Scripts
 Push any commits to the appropriate files. Keep to the four files established.
