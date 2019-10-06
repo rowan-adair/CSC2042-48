@@ -2,6 +2,12 @@
 Repository for Team 48 scripts, documentation and any other useful files/links.
 For tracking progress as we'll be using the trello board (https://trello.com/b/elB5Nmiz/csc2042-team-48).
 
+# Software You Will Need
+I'd reccomend installing MySQL Workbench to work with and test any of the scripts. I'd also reccomend installing a good text editor so you don't always have to use MySQL Workbench. Something like Visual Studio Code or Submlime Text. Finally; everyone will need to install git to work with this repo and work further on the project. The list of download links are below.
+- MySQL Workbench : https://www.mysql.com/products/workbench/
+- Visual Studio Code : https://code.visualstudio.com/
+- Git : https://git-scm.com/downloads
+
 # Initializing Local Repo
 If anyone doesn't know how to use git bash yet it's okay :D. This article is pretty great and clear for a guide on how to use git bash : https://www.sitereq.com/post/easiest-way-to-install-git-bash-commands-on-windows.
 
