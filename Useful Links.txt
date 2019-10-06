@@ -1,2 +1,0 @@
-SQL Reference : https://www.w3schools.com/sql/
-Bash Basics : https://www.youtube.com/watch?v=oQc-2gsjgDg
