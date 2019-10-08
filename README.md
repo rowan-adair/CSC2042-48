@@ -19,7 +19,7 @@ When adding this repo to your own pc, open git bash in the chosen directory and 
 
 `git remote -v`
 
-`git pull`
+`git pull origin master`
 
 # Scripts
 Push any commits to the appropriate files. Keep to the four files established.
