@@ -37,10 +37,10 @@ CREATE TABLE IF NOT EXISTS `Manager`
 (
     `ManagerID` INT NOT NULL AUTO_INCREMENT UNIQUE,
     `EmployeeID` INT NOT NULL,
-    `OfficeLocation` TEXT --NOTE: Data type might need corrected
+    `OfficeLocation` TEXT, --NOTE: Data type might need corrected
     PRIMARY KEY(`ManagerID`),
-    FOREIGN KEY(`EmployeeID`) REFERENCES Employee(`EmployeeID`)
-    INDEX(`OfficeLocation`)
+    FOREIGN KEY(`EmployeeID`) REFERENCES Employee(`EmployeeID`),
+    INDEX(`OfficeLocation`(500))
 );
 
 CREATE TABLE IF NOT EXISTS `Skill`
