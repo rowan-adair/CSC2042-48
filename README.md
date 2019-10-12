@@ -2,6 +2,8 @@
 Repository for Team 48 scripts, documentation and any other useful files/links.
 For tracking progress as we'll be using the trello board (https://trello.com/invite/b/elB5Nmiz/7f145ad1fee021fd835ae6dfe1d4672b/csc2042-team-48).
 
+When uploading doc files, could a pdf copy also be submitted. Just run it through a pdf converter like small pdf :https://smallpdf.com/pdf-converter
+
 # Software You Will Need
 I'd reccomend installing MySQL Workbench to work with and test any of the scripts. I'd also reccomend installing a good text editor so you don't always have to use MySQL Workbench. Something like Visual Studio Code or Submlime Text. Finally; everyone will need to install git to work with this repo and work further on the project. The list of download links are below.
 - MySQL Workbench : https://www.mysql.com/products/workbench/
