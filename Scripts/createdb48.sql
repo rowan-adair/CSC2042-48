@@ -90,6 +90,16 @@ CREATE TABLE IF NOT EXISTS `ApartmentBuilding`
     FOREIGN KEY(`BuildingID`) REFERENCES Building(`BuildingID`)
 );
 
+CREATE TABLE IF NOT EXISTS `ManagerOffice`
+(
+	`OfficeID` INT NOT NULL,
+    `AptID` INT NOT NULL,
+    `ManagerID` INT NOT NULL,
+    PRIMARY KEY(`OfficeID`),
+    FOREIGN KEY(`AptID`) REFERENCES Apartment(`AptID`),
+    FOREIGN KEY(`ManagerID`) REFERENCES Manager(`ManagerID`)
+);
+
 -- NOTE: Apartment.ManagerID could be normalised further?
 CREATE TABLE IF NOT EXISTS `ApartmentManager`
 (
