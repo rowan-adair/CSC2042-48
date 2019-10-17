@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `Manager`
     `ManagerID` INT NOT NULL AUTO_INCREMENT UNIQUE,
     `EmployeeID` INT NOT NULL,
     PRIMARY KEY(`ManagerID`),
-    FOREIGN KEY(`EmployeeID`) REFERENCES Employee(`EmployeeID`),
+    FOREIGN KEY(`EmployeeID`) REFERENCES Employee(`EmployeeID`)
 );
 
 CREATE TABLE IF NOT EXISTS `Skill`
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `ManagerOffice`
     `ManagerID` INT NOT NULL,
     `OfficeID` INT NOT NULL,
     FOREIGN KEY(`ManagerID`) REFERENCES Manager(`ManagerID`),
-    FOREIGN KEY(`OfficeID`) REFERENCES Apartment(`OfficeID`)
+    FOREIGN KEY(`OfficeID`) REFERENCES Office(`OfficeID`)
 );
 
 CREATE TABLE IF NOT EXISTS `ApartmentManager`
