@@ -1,6 +1,6 @@
 -- Create database script
 -- Barney Young - 40231585 - Team 48
--- Draft 1 - 2019-10-12
+-- Draft 2 - 2019-10-17
 
 CREATE TABLE IF NOT EXISTS `Person`
 (
@@ -37,10 +37,8 @@ CREATE TABLE IF NOT EXISTS `Manager`
 (
     `ManagerID` INT NOT NULL AUTO_INCREMENT UNIQUE,
     `EmployeeID` INT NOT NULL,
-    `OfficeLocation` TEXT, --NOTE: Data type might need corrected
     PRIMARY KEY(`ManagerID`),
     FOREIGN KEY(`EmployeeID`) REFERENCES Employee(`EmployeeID`),
-    INDEX(`OfficeLocation`(500))
 );
 
 CREATE TABLE IF NOT EXISTS `Skill`
@@ -53,11 +51,8 @@ CREATE TABLE IF NOT EXISTS `Skill`
 
 CREATE TABLE IF NOT EXISTS `TechnicianSkill`
 (
-    -- NOTE: I don't think a new primary key is needed here, a composite key is sufficient
-    -- `TechnicianSkillID` INT NOT NULL AUTO_INCREMENT UNIQUE,
     `EmployeeID` INT NOT NULL,
     `SkillID` INT NOT NULL,
-    -- PRIMARY KEY(`TechnicianSkillID`),
     FOREIGN KEY(`EmployeeID`) REFERENCES Employee(`EmployeeID`),
     FOREIGN KEY(`SkillID`) REFERENCES Skill(`SkillID`)
 );
@@ -81,7 +76,6 @@ CREATE TABLE IF NOT EXISTS `Apartment`
     INDEX(`AptNo`)
 );
 
--- NOTE: Apartment.BuildingID can be normalised further by creating this linking table
 CREATE TABLE IF NOT EXISTS `ApartmentBuilding`
 (
     `AptID` INT NOT NULL,
@@ -90,17 +84,22 @@ CREATE TABLE IF NOT EXISTS `ApartmentBuilding`
     FOREIGN KEY(`BuildingID`) REFERENCES Building(`BuildingID`)
 );
 
-CREATE TABLE IF NOT EXISTS `ManagerOffice`
+CREATE TABLE IF NOT EXISTS `Office`
 (
-	`OfficeID` INT NOT NULL,
+    `OfficeID` INT NOT NULL AUTO_INCREMENT UNIQUE,
     `AptID` INT NOT NULL,
-    `ManagerID` INT NOT NULL,
     PRIMARY KEY(`OfficeID`),
-    FOREIGN KEY(`AptID`) REFERENCES Apartment(`AptID`),
-    FOREIGN KEY(`ManagerID`) REFERENCES Manager(`ManagerID`)
+    FOREIGN KEY(`AptID`) REFERENCES Apartment(`AptID`)
 );
 
--- NOTE: Apartment.ManagerID could be normalised further?
+CREATE TABLE IF NOT EXISTS `ManagerOffice`
+(
+    `ManagerID` INT NOT NULL,
+    `OfficeID` INT NOT NULL,
+    FOREIGN KEY(`ManagerID`) REFERENCES Manager(`ManagerID`),
+    FOREIGN KEY(`OfficeID`) REFERENCES Apartment(`OfficeID`)
+);
+
 CREATE TABLE IF NOT EXISTS `ApartmentManager`
 (
     `AptID` INT NOT NULL,
@@ -123,16 +122,12 @@ CREATE TABLE IF NOT EXISTS `Lease`
 
 CREATE TABLE IF NOT EXISTS `LeaseTenant`
 (
-    -- NOTE: I don't think a new primary key is needed here, a composite key is sufficient
-    -- `LeaseTenantID` INT NOT NULL AUTO_INCREMENT UNIQUE,
     `LeaseID` INT NOT NULL,
     `TenantID` INT NOT NULL,
-    -- PRIMARY KEY(`LeaseTenantID`),
     FOREIGN KEY(`LeaseID`) REFERENCES Lease(`LeaseID`),
     FOREIGN KEY(`TenantID`) REFERENCES Tenant(`TenantID`)
 );
 
--- NOTE: Lease.ManagerID could be normalised further?
 CREATE TABLE IF NOT EXISTS `LeaseManager`
 (
     `LeaseID` INT NOT NULL,
