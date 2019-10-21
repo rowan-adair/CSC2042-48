@@ -30,7 +30,15 @@ Push any commits to the appropriate files. Keep to the four files established.
 - insertdb48.sql
 - querydb48.sql
 
+# Query Ideas
+- Check for tenants who have paid or not paid rent.
+- The query for apartments that have ensuites (possibly number of apartments in a certain building with ensuites).
+- The query for managers managing multiple apartments over multiple buildings.
+- The query for building assignment of employees based on skill.
+
 # Report
 We'll be using one file, report48.doc.
 
 When this file is ready for submission it will be saved as a pdf file.
+
+
