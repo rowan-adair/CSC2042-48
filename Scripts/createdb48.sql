@@ -2,6 +2,8 @@
 -- Barney Young - 40231585 - Team 48
 -- Draft 2 - 2019-10-17
 
+CREATE DATABASE IF NOT EXISTS `QUBAccomodation48`;
+
 CREATE TABLE IF NOT EXISTS `Person`
 (
     `PersonID` INT NOT NULL AUTO_INCREMENT UNIQUE,
