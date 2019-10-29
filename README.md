@@ -35,6 +35,7 @@ Push any commits to the appropriate files. Keep to the four files established.
 - The query for apartments that have ensuites (possibly number of apartments in a certain building with ensuites).
 - The query for managers managing multiple apartments over multiple buildings.
 - The query for building assignment of employees based on skill.
+- A query to update management of an apartment or set of apartments i.e. an apartment comes under new management.
 
 # Report
 We'll be using one file, report48.doc.
