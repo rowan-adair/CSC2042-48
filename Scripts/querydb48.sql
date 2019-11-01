@@ -10,3 +10,11 @@ LEFT JOIN apartment ON apartmentbuilding.AptID = apartment.AptID
 -- LEFT JOIN building ON apartmentbuilding.BuildingID = building.BuildingID 
 -- May alter to display building information or extended information on tenants.
 WHERE apartment.Bedrooms = apartment.Bathrooms;
+
+
+-- Query 2 : Find managers managing multiple apartments over multiple buildings.
+-- Draft 1 - Barney Young - 40231585 - Definitely need to test this properly. Also will need to add more joins if we want to display the manager's name instead of just their ManagerID. **TBD**
+SELECT ManagerID AS "Manager"
+FROM apartmentmanager
+JOIN apartmentmanager ON apartmentbuilding.AptID = apartmentmanager.AptID
+WHERE COUNT(apartmentbuilding.BuildingID) > 1;
