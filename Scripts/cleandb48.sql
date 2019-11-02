@@ -1,5 +1,5 @@
 -- Clean first draft, just drops schema.
-
+-- second draft
 DROP SCHEMA IF EXISTS `qubaccomodation48`;
 CREATE SCHEMA IF NOT EXISTS `qubaccomodation48`;
 DROP TABLE IF EXISTS Buildings;
