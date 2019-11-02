@@ -1,4 +1,4 @@
-insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Baryram', 'Caygill', 'Steffen', '8252896523', 'Mother', '7625912190');
+insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Baryram', 'Caygill', 'Steffen', '074820060', 'Mother', '7625912190');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Xylia', 'Helsdon', 'Dorian', '6454776690', 'Father', '2764059300');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Paten', 'Dofty', 'Garvin', '9754364958', 'Mother', '7415268862');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Mitzi', 'Tuckie', 'Sydney', '7025483721', 'Father', '9152344654');
@@ -224,12 +224,12 @@ insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactN
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Chelsy', 'Silbermann', 'Tony', '2051479288', 'Father', '4582467137');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Justen', 'MacKeogh', 'Jerald', '2682643920', 'Guardian', '8783853272');
 
---listed in assignment doc
+-- listed in assignment doc
 insert into Skill (SkillName) values ('carpentry');
 insert into Skill (SkillName) values ('Plumbing');
 insert into Skill (SkillName) values ('electrical');
 
-    --Assumption only 9 Buildings to hold 45 apartments, 5 apartments per building
+-- Assumption only 9 Buildings to hold 45 apartments, 5 apartments per building
 insert into Building (Address, Postcode) values ('78 Malone Road', 'BT9 5BW');
 insert into Building (Address, Postcode) values ('1 Mc Clintock St', 'BT2 7GL');
 insert into Building (Address, Postcode) values ('8 College St', 'BT1 6DS');
@@ -240,7 +240,7 @@ insert into Building (Address, Postcode) values ('78 Malone Road', 'BT9 5BW');
 insert into Building (Address, Postcode) values ('1 Mc Clintock St', 'BT2 7GL');
 insert into Building (Address, Postcode) values ('8 College St', 'BT1 6DS');
 
---Each apartment holds 5 people, 45 apartments for 225 people, each apartment is unique to building only
+-- Each apartment holds 5 people, 45 apartments for 225 people, each apartment is unique to building only
 insert into Apartment (AptNo, Bedrooms, Bathrooms, TotalArea) values (1, 8, 3, 15);
 insert into Apartment (AptNo, Bedrooms, Bathrooms, TotalArea) values (2, 10, 6, 15);
 insert into Apartment (AptNo, Bedrooms, Bathrooms, TotalArea) values (3, 9, 10, 30);

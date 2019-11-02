@@ -1,6 +1,7 @@
 -- Create database script
--- Barney Young - 40231585 - Team 48
--- Draft 2 - 2019-10-17
+-- Barney Young - 40231585 // Rowan Adair - 40226787 - Team 48 
+-- Draft 3 - 2019-11-01
+
 
 CREATE DATABASE IF NOT EXISTS `QUBAccomodation48`;
 
@@ -10,10 +11,10 @@ CREATE TABLE IF NOT EXISTS `Person`
     `FirstName` VARCHAR(255) NOT NULL,
     `LastName` VARCHAR(255) NOT NULL,
     `EmergencyContactName` VARCHAR(255) NOT NULL,
-    `EmergencyContactNumber` INT NOT NULL,
+    `EmergencyContactNumber` VARCHAR(255) NOT NULL,
     `EmergencyContactRelation` VARCHAR(255) NOT NULL,
-    `BankAccNo` INT NOT NULL,
-    PRIMARY KEY(`PersonID`),
+    `BankAccNo` VARCHAR(255) NOT NULL,
+    PRIMARY KEY(`PersonID`), 
     INDEX(`FirstName`),
     INDEX(`LastName`)
 );
