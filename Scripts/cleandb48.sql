@@ -14,6 +14,6 @@ DROP TABLE IF EXISTS office;
 DROP TABLE IF EXISTS manageroffice;
 DROP TABLE IF EXISTS leasemanager;
 DROP TABLE IF EXISTS aparatmentmanager;
-DROP TAB;LE IF EXISTS aparatmentbuilding;
+DROP TABLE IF EXISTS aparatmentbuilding;
 
 
