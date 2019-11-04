@@ -1,5 +1,6 @@
 -- Clean first draft, just drops schema.
 -- second draft
+DROP TABLE IF EXISTS leasetenant;
 DROP TABLE IF EXISTS leasemanager;
 DROP TABLE IF EXISTS apartmentmanager;
 DROP TABLE IF EXISTS ManagerOffice;

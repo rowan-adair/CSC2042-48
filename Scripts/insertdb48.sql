@@ -232,7 +232,7 @@ insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactN
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Ealasaid', 'Florentine', 'Malinda', '1936606035', 'Husband', '1199102135');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Chelsy', 'Silbermann', 'Tony', '2051479288', 'Father', '4582467137');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Justen', 'MacKeogh', 'Jerald', '2682643920', 'Guardian', '8783853272');
-insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Tulley', 'Nendick', 'Hedvige', '4199677316', 'Mother', '7497959906'); --emps 150
+insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Tulley', 'Nendick', 'Hedvige', '4199677316', 'Mother', '7497959906'); -- emps 150
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Crissie', 'Cornthwaite', 'Barney', '6945831563', 'Cousin', '5874958875');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Lil', 'Grewes', 'Willamina', '7949000053', 'Mother', '7816378974');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Corrine', 'Hirth', 'Silvio', '5724799371', 'Husband', '4589495772');
@@ -336,7 +336,7 @@ insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactN
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Cortney', 'Crosse', 'Janella', '2702997384', 'Husband', '3757487626');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Linc', 'Bartlomiejczyk', 'Duky', '6122836495', 'Cousin', '4078313507');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Vicki', 'Bycraft', 'Reinold', '7078722022', 'Wife', '1999599659');
-insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Augustina', 'Cayle', 'Henka', '2735642200', 'Wife', '5098446354'); --manager 45
+insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Augustina', 'Cayle', 'Henka', '2735642200', 'Wife', '5098446354');  -- manager 45
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Aurelia', 'Heale', 'Rozanne', '9868888188', 'Cousin', '4335065927');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Sunshine', 'Hailwood', 'Paulina', '8805942318', 'Father', '1392074106');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Bard', 'Fillimore', 'Benn', '9265402954', 'Mother', '9369550895');
@@ -807,7 +807,7 @@ insert into Manager (EmployeeID) values (147);
 insert into Manager (EmployeeID) values (148);
 insert into Manager (EmployeeID) values (149);
 
---listed in assignment doc
+-- listed in assignment doc
 insert into Skill (SkillName) values ('carpentry');
 insert into Skill (SkillName) values ('Plumbing');
 insert into Skill (SkillName) values ('electrical');
@@ -917,8 +917,7 @@ insert into TechnicianSkill (EmployeeID, SkillID) values (327, 1);
 insert into TechnicianSkill (EmployeeID, SkillID) values (328, 3);
 insert into TechnicianSkill (EmployeeID, SkillID) values (329, 1);
 
-
-    --Assumption only 9 Buildings to hold 45 apartments, 5 apartments per building
+-- Assumption only 9 Buildings to hold 45 apartments, 5 apartments per building
 insert into Building (Address, Postcode) values ('78 Malone Road', 'BT9 5BW');
 insert into Building (Address, Postcode) values ('1 Mc Clintock St', 'BT2 7GL');
 insert into Building (Address, Postcode) values ('8 College St', 'BT1 6DS');
@@ -929,7 +928,7 @@ insert into Building (Address, Postcode) values ('78 Malone Road', 'BT9 5BW');
 insert into Building (Address, Postcode) values ('1 Mc Clintock St', 'BT2 7GL');
 insert into Building (Address, Postcode) values ('8 College St', 'BT1 6DS');
 
---Each apartment holds 5 people, 45 apartments for 225 people, each apartment is unique to building only
+-- Each apartment holds 5 people, 45 apartments for 225 people, each apartment is unique to building only
 insert into Apartment (AptNo, Bedrooms, Bathrooms, TotalArea) values (1, 8, 3, 15);
 insert into Apartment (AptNo, Bedrooms, Bathrooms, TotalArea) values (2, 10, 6, 15);
 insert into Apartment (AptNo, Bedrooms, Bathrooms, TotalArea) values (3, 9, 10, 30);
