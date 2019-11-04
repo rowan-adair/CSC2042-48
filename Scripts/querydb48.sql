@@ -7,7 +7,7 @@
 SELECT apartmentbuilding.BuildingID AS "Building" , apartment.AptNo AS "Apartment No.", apartment.Bedrooms AS "Bedrooms", apartment.Bathrooms AS "Bathrooms"
 FROM apartmentbuilding 
 LEFT JOIN apartment ON apartmentbuilding.AptID = apartment.AptID
--- LEFT JOIN building ON apartmentbuilding.BuildingID = building.BuildingID 
+LEFT JOIN building ON apartmentbuilding.BuildingID = building.BuildingID 
 -- May alter to display building information or extended information on tenants.
 WHERE apartment.Bedrooms = apartment.Bathrooms;
 
@@ -18,3 +18,9 @@ SELECT ManagerID AS "Manager"
 FROM apartmentmanager
 JOIN apartmentmanager ON apartmentbuilding.AptID = apartmentmanager.AptID
 WHERE COUNT(apartmentbuilding.BuildingID) > 1;
+
+-- Query 3 : Find employees with two or more skills and increase their pay appropriately.
+-- Draft 1 - Youseff Emam
+
+-- Query 4 : Increase rent based on size of apartments.
+-- Draft 1 - Scott Lam
