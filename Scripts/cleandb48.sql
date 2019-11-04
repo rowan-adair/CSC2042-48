@@ -9,4 +9,11 @@ DROP TABLE IF EXISTS Employee;
 DROP TABLE IF EXISTS Tenant;
 DROP TABLE IF EXISTS Person;
 DROP TABLE IF EXISTS Apartment;
-DROP TABLE IF EXISTS Buildings;
+DROP TABLE IF EXISTS buildings;
+DROP TABLE IF EXISTS office;
+DROP TABLE IF EXISTS manageroffice;
+DROP TABLE IF EXISTS leasemanager;
+DROP TABLE IF EXISTS aparatmentmanager;
+DROP TAB;LE IF EXISTS aparatmentbuilding;
+
+
