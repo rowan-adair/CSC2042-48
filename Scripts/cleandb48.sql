@@ -13,7 +13,7 @@ DROP TABLE IF EXISTS buildings;
 DROP TABLE IF EXISTS office;
 DROP TABLE IF EXISTS manageroffice;
 DROP TABLE IF EXISTS leasemanager;
-DROP TABLE IF EXISTS aparatmentmanager;
-DROP TABLE IF EXISTS aparatmentbuilding;
+DROP TABLE IF EXISTS apartmentmanager;
+DROP TABLE IF EXISTS apartmentbuilding;
 
 
