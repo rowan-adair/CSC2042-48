@@ -1,10 +1,10 @@
---Lease in terms of months
---Person includes tenants and employees
+-- Lease in terms of months
+-- Person includes tenants and employees
 
---Considerations
---one manager to one apartment, reduce nukber of apartments for a more realistic representation?
---offices? 1 manager to appartment how many other
---1 leasese to 1 tenants or should each tenant in an aprtment be worked out
+-- Considerations
+-- one manager to one apartment, reduce nukber of apartments for a more realistic representation?
+-- offices? 1 manager to appartment how many other
+-- 1 leasese to 1 tenants or should each tenant in an aprtment be worked out
 
 
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Baryram', 'Caygill', 'Steffen', '8252896523', 'Mother', '7625912190');
@@ -232,9 +232,9 @@ insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactN
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Ealasaid', 'Florentine', 'Malinda', '1936606035', 'Husband', '1199102135');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Chelsy', 'Silbermann', 'Tony', '2051479288', 'Father', '4582467137');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Justen', 'MacKeogh', 'Jerald', '2682643920', 'Guardian', '8783853272');
-insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation`, BankAccNo) values ('Tulley', 'Nendick', 'Hedvige', '4199677316', 'Mother', '7497959906'); --emps 150
-insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation`, BankAccNo) values ('Crissie', 'Cornthwaite', 'Barney', '6945831563', 'Cousin', '5874958875');
-insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation`, BankAccNo) values ('Lil', 'Grewes', 'Willamina', '7949000053', 'Mother', '7816378974');
+insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Tulley', 'Nendick', 'Hedvige', '4199677316', 'Mother', '7497959906');       
+insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Crissie', 'Cornthwaite', 'Barney', '6945831563', 'Cousin', '5874958875');
+insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation, BankAccNo) values ('Lil', 'Grewes', 'Willamina', '7949000053', 'Mother', '7816378974');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation`, BankAccNo) values ('Corrine', 'Hirth', 'Silvio', '5724799371', 'Husband', '4589495772');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation`, BankAccNo) values ('Thorny', 'Tooker', 'Jamison', '6182877534', 'Mother', '8366165890');
 insert into Person (FirstName, LastName, EmergencyContactName, EmergencyContactNumber, EmergencyContactRelation`, BankAccNo) values ('Philipa', 'Brooksbie', 'Ambrosio', '1933172012', 'Wife', '4595733916');
