@@ -13,11 +13,18 @@ WHERE apartment.Bedrooms = apartment.Bathrooms;
 
 
 -- Query 2 : Find managers managing multiple apartments over multiple buildings.
--- Draft 1 - Barney Young - 40231585 - Definitely need to test this properly. Also will need to add more joins if we want to display the manager's name instead of just their ManagerID. **TBD**
-SELECT ManagerID AS "Manager"
-FROM apartmentmanager
-JOIN apartmentmanager ON apartmentbuilding.AptID = apartmentmanager.AptID
-WHERE COUNT(apartmentbuilding.BuildingID) > 1;
+-- Draft 2 - Barney Young - 40231585 - 2019-11-05
+SELECT Person.FirstName AS "First name", Person.LastName AS "Last name", Manager.ManagerID AS "ManagerID"
+FROM Person
+JOIN Employee ON Person.PersonID = Employee.PersonID
+JOIN Manager ON Employee.EmployeeID = Manager.EmployeeID
+JOIN (
+    SELECT ApartmentManager.ManagerID, COUNT(DISTINCT ApartmentBuilding.BuildingID) AS "Number of buildings"
+    From ApartmentManager
+    JOIN ApartmentBuilding ON ApartmentManager.AptID = ApartmentBuilding.AptID
+    GROUP BY ManagerID
+    HAVING `Number of buildings` > 1
+    ) dataTbl ON Manager.ManagerID = dataTbl.ManagerID;
 
 -- Query 3 : Find employees with two or more skills and increase their pay appropriately.
 -- Draft 1 - Youseff Emam
