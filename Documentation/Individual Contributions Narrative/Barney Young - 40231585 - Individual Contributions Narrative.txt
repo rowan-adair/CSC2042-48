@@ -1,0 +1,1 @@
+Barney Young: The most significant part of my contribution was the createdb48.sql file, which I wrote, based on the ERD and schema. I was also responsible for completing query 2 in our group’s querydb48.sql file. Like the other group members, I helped in other ways by attending and contributing to the group meetings and correcting and assisting with some errors in group files.
