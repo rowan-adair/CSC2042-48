@@ -28,6 +28,15 @@ JOIN (
 
 -- Query 3 : Find employees with two or more skills and increase their pay appropriately.
 -- Draft 1 - Youseff Emam
+UPDATE employee
+set employee.pay=3000
+Where employeeID in(
+SELECT * FROM(SELECT technicianskill.EmployeeID
+from technicianskill
+left join employee ON technicianskill.EmployeeID=employee.EmployeeID
+group by EmployeeID
+HAVING  COUNT(DISTINCT technicianskill.SkillID)>1)tblTmp
+);
 
 -- Query 4 : Increase rent based on size of apartments.
 -- Draft 1 - Scott Lam
