@@ -29,7 +29,7 @@ JOIN (
 -- Query 3 : Find employees with two or more skills and increase their pay appropriately.
 -- Draft 1 - Youseff Emam
 UPDATE employee
-set employee.pay=3000
+set employee.pay=employee.pay * 1.2
 Where employeeID in(
 SELECT * FROM(SELECT technicianskill.EmployeeID
 from technicianskill
