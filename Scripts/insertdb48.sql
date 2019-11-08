@@ -1338,6 +1338,28 @@ insert into ApartmentBuilding (AptID, BuildingID) values(66,7);
 insert into ApartmentBuilding (AptID, BuildingID) values(67,7);
 insert into ApartmentBuilding (AptID, BuildingID) values(68,7);
 insert into ApartmentBuilding (AptID, BuildingID) values(69,7);
+insert into ApartmentBuilding (AptID, BuildingID) values(70,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(71,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(72,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(73,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(74,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(75,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(76,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(77,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(78,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(79,8);
+insert into ApartmentBuilding (AptID, BuildingID) values(80,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(81,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(82,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(83,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(84,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(85,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(86,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(87,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(88,9);
+insert into ApartmentBuilding (AptID, BuildingID) values(89,9);
+
+
 
 
 
