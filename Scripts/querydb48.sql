@@ -4,13 +4,12 @@
 
 
 -- Query 1 : Find the number of apartments in a building with ensuites.
-SELECT apartmentbuilding.BuildingID AS "Building" , apartment.AptNo AS "Apartment No.", apartment.Bedrooms AS "Bedrooms", apartment.Bathrooms AS "Bathrooms"
-FROM apartmentbuilding 
-LEFT JOIN apartment ON apartmentbuilding.AptID = apartment.AptID
-LEFT JOIN building ON apartmentbuilding.BuildingID = building.BuildingID 
--- May alter to display building information or extended information on tenants.
-WHERE apartment.Bedrooms = apartment.Bathrooms;
-
+SELECT apartmentbuilding.BuildingID AS "Building", 
+COUNT(apartmentbuilding.AptID) AS "Number of Ensuite Apartment" FROM apartmentbuilding
+INNER JOIN apartment ON apartmentbuilding.AptID = apartment.AptID
+INNER JOIN building ON apartmentbuilding.BuildingID = building.BuildingID 
+WHERE apartment.Bedrooms = apartment.Bathrooms 
+GROUP BY apartmentbuilding.buildingid;
 
 -- Query 2 : Find managers managing multiple apartments over multiple buildings.
 -- Draft 2 - Barney Young - 40231585 - 2019-11-05
@@ -29,12 +28,12 @@ JOIN (
 -- Query 3 : Find employees with two or more skills and increase their pay appropriately.
 -- Draft 1 - Youseff Emam
 UPDATE employee
-set employee.pay=employee.pay * 1.2
-Where employeeID in(
+SET employee.pay=employee.pay * 1.2
+WHERE employeeID in(
 SELECT * FROM(SELECT technicianskill.EmployeeID
-from technicianskill
-left join employee ON technicianskill.EmployeeID=employee.EmployeeID
-group by EmployeeID
+FROM technicianskill
+LEFT JOIN employee ON technicianskill.EmployeeID=employee.EmployeeID
+GROUP BY EmployeeID
 HAVING  COUNT(DISTINCT technicianskill.SkillID)>1)tblTmp
 );
 
