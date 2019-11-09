@@ -3,13 +3,25 @@
 -- Draft 1
 
 
--- Query 1 : Find the number of apartments in a building with ensuites.
+-- Query 1 Find the number of apartments with/without ensuites and the
+-- total apartments in the building.
+-- Draft 3 - Rowan Adair- 40231585 - 2019-11-09
 SELECT apartmentbuilding.BuildingID AS "Building", 
-COUNT(apartmentbuilding.AptID) AS "Number of Ensuite Apartment" FROM apartmentbuilding
-INNER JOIN apartment ON apartmentbuilding.AptID = apartment.AptID
+building.Address AS "Address",
+ COUNT(CASE 
+	WHEN apartment.Bedrooms = apartment.Bathrooms 
+    THEN apartment.aptid 
+    END) AS "Number of Ensuite Apartments",
+ COUNT(CASE 
+	WHEN  apartment.Bedrooms != apartment.Bathrooms 
+    THEN apartment.aptid 
+    END) AS "Number of Non-ensuite Apartments",
+ COUNT(apartment.aptid) AS "Total Apartments"
+FROM apartment
+INNER JOIN apartmentbuilding ON apartment.AptID = apartmentbuilding.AptID
 INNER JOIN building ON apartmentbuilding.BuildingID = building.BuildingID 
-WHERE apartment.Bedrooms = apartment.Bathrooms 
 GROUP BY apartmentbuilding.buildingid;
+
 
 -- Query 2 : Find managers managing multiple apartments over multiple buildings.
 -- Draft 2 - Barney Young - 40231585 - 2019-11-05

@@ -1361,8 +1361,6 @@ insert into ApartmentBuilding (AptID, BuildingID) values(89,9);
 
 
 
-
-
 insert into Lease (AptID, StartDate, Duration, Rent) values (1, '01/09/17', 12, 113.72);
 insert into Lease (AptID, StartDate, Duration, Rent) values (2, '01/09/18', 12, 106.31);
 insert into Lease (AptID, StartDate, Duration, Rent) values (3, '01/09/18', 24, 93.86);
