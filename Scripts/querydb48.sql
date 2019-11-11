@@ -39,6 +39,7 @@ JOIN (
 
 -- Query 3 : Find employees with two or more skills and increase their pay appropriately.
 -- Draft 1 - Youseff Emam
+SET SQL_SAFE_UPDATES = 0;
 UPDATE employee
 SET employee.pay=employee.pay * 1.2
 WHERE employeeID in(
