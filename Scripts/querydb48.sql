@@ -51,3 +51,7 @@ HAVING  COUNT(DISTINCT technicianskill.SkillID)>1)tblTmp
 
 -- Query 4 : Increase rent based on size of apartments.
 -- Draft 1 - Scott Lam
+UPDATE lease
+Left JOIN apartment ON lease.AptID = apartment.AptID
+SET lease.Rent = lease.Rent * 1.1
+WHERE apartment.TotalArea >= 15;
