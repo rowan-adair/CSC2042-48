@@ -1,6 +1,5 @@
 -- Query Scripts
 -- Rowan Adair - 40226787 - Team 48
--- Draft 1
 
 
 -- Query 1 Find the number of apartments with/without ensuites and the
